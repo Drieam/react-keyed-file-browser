@@ -82,8 +82,12 @@ class RawTableFolder extends BaseFolder {
             {draggable}
           </div>
         </td>
-        <td />
-        <td />
+        {!this.props.hideSize && (
+          <td />
+        )}
+        {!this.props.hideModified && (
+          <td />
+        )}
       </tr>
     )
 
